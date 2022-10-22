@@ -71,3 +71,18 @@ i. Prove that ( $\hat{σ^1}$, $\hat{σ^2}$) is NE.
 ii. Prove that ( $\bar{σ^1}$, $\bar{σ^2}$) is also NE when γ = 1/2.  
 iii. Find a $γ^∗$ so it is ( $\hat{σ^1}$, $\hat{σ^2}$) to be NE if and only if γ > $γ^*$
 
+### To solve this,I created 5 functions:
+(a) PH=PrHit(D,K) gives a PH matrix of hit probabilities for distances 0,
+1, ..., D. You can choose any form of p(d; K) but it must be
+decreasing and satisfy p(0; K) = 1 – use parameter K to
+modify the odds of success).  
+(b) [Tr,O,U0]=DuelTree(D,PH1,PH2) gives the tree Tr of the game, where O(v)
+shows the player who moves when the game is at the top v
+(O(v)=0 for terminal vertices) and U0(v) gives the yield at vertex v
+(U0(v)=0 for non-terminal vertices).  
+(c) U=BackInd(1,U0,Tr,O) gives U(v) the return on $P^1$ when the game starts
+at the top v.  
+(d) S=FindSucc(Tr,U,D) gives S(v) the vertex that follows v in the optimum
+gameplay.  
+(e) P=FindPath(1,D,S) gives P the path (sequence of vertices) to the optimal
+gameplay.
