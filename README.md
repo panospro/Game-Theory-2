@@ -47,4 +47,27 @@ A =[(4, 4), (0, 5); (5, 0) (1, 1)].
 Players choose strategies $a^n_t$ = $σ^n$( $a^1_1$, $a^2_1$)...( $a^1_{t-1}$, $a^2_{t-1}$), where $a^n_{t}$
 is motion of $P^n$ at t- in the game stage. Write $h_t$ = ( $a^1_1$, $a^2_1$)...( $a^1_{t}$, $a^2_{t}$), 
 she is the history of the game up to stage t. Well, we can also write $a^n_t$ = $σ^n$( $h_{t−1}$). 
-Note that we need both $h_0$ = ∅ (zero history) and $σ_n$( $h_0$)
+Note that we need both $h_0$ = ∅ (zero history) and $σ_n$( $h_0$)  
+
+(a) First explain why A is a “Prisoner's Dilemma” game.  
+(b) Then consider the case T < ∞ with yielding $P^n$ to be  
+$Q^n$( $σ^1$, $σ^2$)= $\sum_{t=1} q^{n} ( σ^1, σ^2)$  
+where $q^n$ ( $σ^1$, $σ^2$) is the performance of $P^n$ in t- in stage. Prove that the only
+NE is the ( $\hat{σ^1}$, $\hat{σ^2}$)  
+where $\hat{σ^n}$( $h_t$) = 2 for each n ∈ {1, 2}, t ∈ {0, 1, ...} and $h_t$ (i.e. continuous desertion).    
+(c) Finally consider the case T = ∞. Now the performance of $P^n$ n will be  
+$Q^n$( $σ^1$, $σ^2$)= $\sum_{t=1} γ^{t-1} q^{n} ( σ^1, σ^2)$  
+γ ∈ (0, 1) is the deflation rate – we assume that the future
+returns are deflated, because they do not have the same value as direct returns.
+We now define the following strategy $\bar{σ^n}$.  
+i. $\bar{σ^n}$ ( $h^0$) = 1. That is: in the first stage I cooperate.  
+ii. For each t > 0: $σ^n$( $h_{t−1}$) = 1 if $h_{t−1}$ contains only 1, otherwise 
+$σ^n$( $h_{t−1}$) = 2.
+That is: at each stage t > 1, I cooperate if there was no desertion until
+stage t − 1, otherwise I exit at t ( and hence also at all subsequent stages).
+
+### To do stuff.  
+i. Prove that ( $\hat{σ^1}$, $\hat{σ^2}$) is NE.  
+ii. Prove that ( $\bar{σ^1}$, $\bar{σ^2}$) is also NE when γ = 1/2.  
+iii. Find a $γ^∗$ so it is ( $\hat{σ^1}$, $\hat{σ^2}$) to be NE if and only if γ > $γ^*$
+
