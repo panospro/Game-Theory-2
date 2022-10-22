@@ -1,6 +1,6 @@
 # Game-Theory-2
 Using Octave to solve different problems  
-# The first problem:
+## The first problem:
 Two companies produce the same product. Company n produces xn ∈ [0,∞) units. The price of the product when for total production x = $x^1 +x^2$ units is P(x) = 100−2√x.
 The cost per unit is $C^1(x^1)$ = $x^1$ + 10 for Company 1 and $C^2(x^2)$= $2x^2$ + 5
 for firm 2. Find the profit functions, level producer NE, and the corresponding gains.
