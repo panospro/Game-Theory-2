@@ -66,12 +66,12 @@ $σ^n$( $h_{t−1}$) = 2.
 That is: at each stage t > 1, I cooperate if there was no desertion until
 stage t − 1, otherwise I exit at t ( and hence also at all subsequent stages).
 
-### To do stuff.  
+## To do stuff.  
 i. Prove that ( $\hat{σ^1}$, $\hat{σ^2}$) is NE.  
 ii. Prove that ( $\bar{σ^1}$, $\bar{σ^2}$) is also NE when γ = 1/2.  
 iii. Find a $γ^∗$ so it is ( $\hat{σ^1}$, $\hat{σ^2}$) to be NE if and only if γ > $γ^*$
 
-### To solve this,I created 5 functions:
+# To solve this,I created 5 functions:
 (a) PH=PrHit(D,K) gives a PH matrix of hit probabilities for distances 0,
 1, ..., D. You can choose any form of p(d; K) but it must be
 decreasing and satisfy p(0; K) = 1 – use parameter K to
