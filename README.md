@@ -21,3 +21,30 @@ let's assume that
 and there exists NE $\hat{x}$ = $\hat{x^1}$, $\hat{x^2}$, ..., $\hat{x^N}$ thus, for each n,
 $\hat{x^1}$ $\neq$ $\hat{x^2}$ = ... = $\hat{x^N}$ .
 Calculate the $\hat{x^n}$
+
+# The fourth problem:
+A duel is conducted according to the following rules. The two players $P^1$
+, $P^2$ they start at a distance of D steps. Everyone has a gun with a bullet. The game
+played in rounds t ∈ {1, 2, 3, ...,D}
+
+(a) In the odd turns t ∈ {1, 3, ...}:
+* The $P^1$ takes a step towards $P^2$.  
+* Since $P^1$ he has a bullet, he can shoot $P^2$. The probability
+to hit him (and kill him) is a function $p_1$(d), where d is
+their current distance – assume that $p_1$(0) = 1 and that $p_1$(d) is
+decreasing function.
+* If $P^1$ shot and hit $P^2$: game over, $P^1$ wins 1 unit and $P^2$ loses 1 unit.
+* If $P^1$ shot and misses $P^2$: game over, $P^1$ loses 1 unit $P^2$ wins 1 point (because players will continue to proceed and when they reach a distance d = 0, $P^2$ will shoot and
+will succeed $P^1$).  
+(b) In the even rounds t ∈ {2, 4, ...} the same procedure is repeated, with the
+roles of $P^1$ and $P^2$ inverses (there is also a probability function $p_2$(d),
+not necessarily the same as $p_1$(d))).  
+
+# The fifth problem:  
+The theme is the recurring dilemma of imprisonment. The players $P^1$ and $P^2$
+will play T stages/rounds (where T can be finite or infinite) of next game stage.  
+A =[(4, 4), (0, 5); (5, 0) (1, 1)].  
+Players choose strategies $a^n_t$ = $σ^n$( $a^1_1$, $a^2_1$)...( $a^1_{t-1}$, $a^2_{t-1}$), where $a^n_{t}$
+is motion of $P^n$ at t- in the game stage. Write $h_t$ = ( $a^1_1$, $a^2_1$)...( $a^1_{t}$, $a^2_{t}$), 
+she is the history of the game up to stage t. Well, we can also write $a^n_t$ = $σ^n$( $h_{t−1}$). 
+Note that we need both $h_0$ = ∅ (zero history) and $σ_n$( $h_0$)
